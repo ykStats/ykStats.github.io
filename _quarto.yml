@@ -9,8 +9,6 @@ website:
     contents: 
       - text: StatsCentral
         href: index.qmd
-      - text: MathStats2
-        href: mathstats2.qmd
 format:
   html:
     theme:

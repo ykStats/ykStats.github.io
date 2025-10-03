@@ -3,13 +3,14 @@ title: "ykStats.github.io"
 format: html
 warning: FALSE
 ---
------
+
+------------------------------------------------------------------------
 
 This are study notes for Statistics.
 
 ## Stats Central
 
-1. [Mathematical Statistics II - Casella and Berger](https://ykStats.github.io/MathStats2).
+1.  [Mathematical Statistics II - Casella and Berger](https://ykStats.github.io/MathStats2).
 
 ```{r}
 1 + 1
