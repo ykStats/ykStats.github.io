@@ -1,0 +1,29 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "statsCentral",
+    "section": "",
+    "text": "These are study notes for Statistics.\n\nStatsCentral\nStatisticalInference - Casella and Berger.\n\n\n2 + 3\n\n[1] 5",
+    "crumbs": [
+      "StatsCentral"
+    ]
+  },
+  {
+    "objectID": "index.html#stats-central",
+    "href": "index.html#stats-central",
+    "title": "statsCentral",
+    "section": "Stats Central",
+    "text": "Stats Central\n\nStatisticalInference - Casella and Berger.\n\n\n2 + 3\n\n[1] 5",
+    "crumbs": [
+      "StatsCentral"
+    ]
+  }
+]
