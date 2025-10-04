@@ -1,5 +1,5 @@
 ---
-title: "ykStats.github.io"
+title: "ykstats.github.io"
 format: html
 warning: FALSE
 ---
@@ -13,5 +13,5 @@ This are study notes for Statistics.
 1.  [Mathematical Statistics II - Casella and Berger](https://ykStats.github.io/MathStats2).
 
 ```{r}
-1 + 1
+1 + 2
 ```
