@@ -13,5 +13,5 @@ This are study notes for Statistics.
 1.  [Mathematical Statistics II - Casella and Berger](https://ykStats.github.io/MathStats2).
 
 ```{r}
-1 + 2
+1 + 3
 ```
