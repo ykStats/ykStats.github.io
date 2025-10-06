@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>statsCentral</title>
+<title>TeXQuarto – statsCentral</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,14 +67,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -103,6 +104,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -116,9 +146,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      statsCentral
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./texquarto.html">TeXQuarto</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -132,9 +160,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">statsCentral</a> 
-    </div>
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
@@ -145,7 +172,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./texquarto.html" class="sidebar-item-text sidebar-link">
+  <a href="./texquarto.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">TeXQuarto</span></a>
   </div>
 </li>
@@ -154,15 +181,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#tex-snippets-used-in-a-tex-block" id="toc-tex-snippets-used-in-a-tex-block" class="nav-link active" data-scroll-target="#tex-snippets-used-in-a-tex-block"><span class="header-section-number">1</span> TeX Snippets used in a TeX block</a></li>
+  <li><a href="#definitionstheorems-are-written-using-div-code-blocks" id="toc-definitionstheorems-are-written-using-div-code-blocks" class="nav-link" data-scroll-target="#definitionstheorems-are-written-using-div-code-blocks"><span class="header-section-number">2</span> <code>Definitions,theorems</code> are written using div code-blocks</a></li>
+  <li><a href="#enter-tables-in-quarto-tex-block-using-array-not-tabular" id="toc-enter-tables-in-quarto-tex-block-using-array-not-tabular" class="nav-link" data-scroll-target="#enter-tables-in-quarto-tex-block-using-array-not-tabular"><span class="header-section-number">3</span> Enter tables in quarto tex block using <code>array</code> (not tabular)</a></li>
+  <li><a href="#equations-in-a-tex-block" id="toc-equations-in-a-tex-block" class="nav-link" data-scroll-target="#equations-in-a-tex-block"><span class="header-section-number">4</span> Equations in a tex block</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">statsCentral</h1>
+<h1 class="title">TeXQuarto</h1>
 </div>
 
 
@@ -180,20 +216,83 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <hr>
-<p>These are study notes for Statistics.</p>
+<section id="tex-snippets-used-in-a-tex-block" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="tex-snippets-used-in-a-tex-block"><span class="header-section-number">1</span> TeX Snippets used in a TeX block</h2>
+<p>**(use <code>cmd-shift-p</code> and <code>expand at cursor</code>)</p>
 <ol type="1">
-<li><a href="https://ykstats.github.io/">StatsCentral</a></li>
-<li><a href="https://ykstats.github.io/casella/">StatisticalInference - Casella and Berger</a>.</li>
+<li><code>ali*</code></li>
 </ol>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 5</code></pre>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a># btw this is a code block: default class</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  |</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>\end{align*}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ol start="2" type="1">
+<li><code>array</code></li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>\begin{array}{c c c}</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>\hline</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  |    </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>\hline</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>\end{array}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="definitionstheorems-are-written-using-div-code-blocks" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="definitionstheorems-are-written-using-div-code-blocks"><span class="header-section-number">2</span> <code>Definitions,theorems</code> are written using div code-blocks</h2>
+<ul>
+<li><code>#def-, #thm-line</code> are used in div-ID to cross reference Definitions or Theorems</li>
+<li>tex-blocks are used to display equations within div</li>
+<li>.proof is a class with the div block</li>
+</ul>
+<div id="def-" class="theorem definition">
+<p><span class="theorem-title"><strong>Definition 1</strong></span> An <span class="math inline">\(event\)</span> is any collection of possible outcomes of an experiment, that is, any subset of S (including S itself).</p>
 </div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>::: {#def-}</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>An $event$ is any collection of possible outcomes of an experiment, </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>that is, any subset of S (including S itself).</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div id="thm-line" class="theorem">
+<p><span class="theorem-title"><strong>Theorem 1</strong></span> If P is a probability function and A is any set in <span class="math inline">\(\mathscr{B}\)</span> then,</p>
+<ol type="a">
+<li><span class="math inline">\(P(0) = 0,\)</span> where <span class="math inline">\(0\)</span> is an empty set;</li>
+<li><span class="math inline">\(P(A) \le 1\)</span>;</li>
+<li><span class="math inline">\(P(A^c) = 1 - P(A)\)</span>.</li>
+</ol>
 </div>
-<p>/Users/ykwong/ykStats/ykstats.github.io/_quarto.yml</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>::: {#thm-line}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>If P is a probability function and A is any set in $\mathscr{B}$ then,</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>a. $P(0) = 0,$ where $0$ is an empty set;</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>b. $P(A) \le 1$;</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>c. $P(A^c) = 1 - P(A)$.</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="enter-tables-in-quarto-tex-block-using-array-not-tabular" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="enter-tables-in-quarto-tex-block-using-array-not-tabular"><span class="header-section-number">3</span> Enter tables in quarto tex block using <code>array</code> (not tabular)</h2>
+<p>This works for html output.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>\begin{array}{l l}</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    a. Commutativity    &amp; A \cup B = B \cup A,\\</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>                        &amp; A \cap B = B \cap A;\\</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    b. Associativity    &amp; A \cup (B \cup C) = (A \cup B)\cup C,\\</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>                        &amp; $A \cap (B \cap C) = (A \cap B)\cap C;\\</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>\end{array}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span class="math display">\[\begin{array}{l l}
+    a. Commutativity    &amp; A \cup B = B \cup A,\\
+                        &amp; A \cap B = B \cap A;\\
+    b. Associativity    &amp; A \cup (B \cup C) = (A \cup B)\cup C,\\
+                        &amp; A \cap (B \cap C) = (A \cap B)\cap C;\\
+\end{array}\]</span>
+</section>
+<section id="equations-in-a-tex-block" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="equations-in-a-tex-block"><span class="header-section-number">4</span> Equations in a tex block</h2>
+<p><span class="math display">\[\begin{align*}
+  &amp; \int_0^2 (3x^2+1) dx \\
+  &amp;= {x^3} + x {\Big|}_0^2  \\
+  &amp;= (2^3 +2) - (0^3 + 0) \\
+  &amp;= 10 -(0) = 10 \qquad \blacksquare
+\end{align*}\]</span></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -247,13 +346,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

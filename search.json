@@ -11,10 +11,7 @@
     "href": "index.html",
     "title": "statsCentral",
     "section": "",
-    "text": "These are study notes for Statistics.\n\nStatsCentral\nStatisticalInference - Casella and Berger.\n\n\n2 + 3\n\n[1] 5",
-    "crumbs": [
-      "StatsCentral"
-    ]
+    "text": "These are study notes for Statistics.\n\nStatsCentral\nStatisticalInference - Casella and Berger.\n\n\n2 + 3\n\n[1] 5\n\n\n/Users/ykwong/ykStats/ykstats.github.io/_quarto.yml"
   },
   {
     "objectID": "index.html#stats-central",
@@ -24,6 +21,156 @@
     "text": "Stats Central\n\nStatisticalInference - Casella and Berger.\n\n\n2 + 3\n\n[1] 5",
     "crumbs": [
       "StatsCentral"
+    ]
+  },
+  {
+    "objectID": "texquarto.html",
+    "href": "texquarto.html",
+    "title": "TeXQuarto",
+    "section": "",
+    "text": "ali*",
+    "crumbs": [
+      "TeXQuarto"
+    ]
+  },
+  {
+    "objectID": "texquarto.html#tex-snippets",
+    "href": "texquarto.html#tex-snippets",
+    "title": "TeXQuarto",
+    "section": "1 TeX Snippets",
+    "text": "1 TeX Snippets\n(use cmd-shift-p and expand at cursor)\nali*\n\nali*",
+    "crumbs": [
+      "TeXQuarto"
+    ]
+  },
+  {
+    "objectID": "texquarto.html#tex-snippets-in-tex-block",
+    "href": "texquarto.html#tex-snippets-in-tex-block",
+    "title": "TeXQuarto",
+    "section": "1 TeX Snippets in TeX Block",
+    "text": "1 TeX Snippets in TeX Block\n(use cmd-shift-p and expand at cursor)\narray\n\\[\\begin{align*}\n  \n\\end{align*}\\]\nali*\n\nali*",
+    "crumbs": [
+      "TeXQuarto"
+    ]
+  },
+  {
+    "objectID": "texquarto.html#tex-snippets-used-in-a-tex-block",
+    "href": "texquarto.html#tex-snippets-used-in-a-tex-block",
+    "title": "TeXQuarto",
+    "section": "1 TeX Snippets used in a TeX block",
+    "text": "1 TeX Snippets used in a TeX block\n**(use cmd-shift-p and expand at cursor)\n\nali*\n\n# btw this is a code block: default class\n\\begin{align*}\n  |\n\\end{align*}\n\narray\n\n\\begin{array}{c c c}\n\\hline\n  |    \n\\hline\n\\end{array}",
+    "crumbs": [
+      "TeXQuarto"
+    ]
+  },
+  {
+    "objectID": "texquarto.html#theorems-in-a-tex-block",
+    "href": "texquarto.html#theorems-in-a-tex-block",
+    "title": "TeXQuarto",
+    "section": "2 Theorems in a TeX Block",
+    "text": "2 Theorems in a TeX Block\nTest Tex block\n\\[\\begin{align*}\n  & \\int_0^2 (3x^2+1) dx \\\\\n  &= {x^3} + x {\\Big|}_0^2  \\\\\n  &= (2^3 +2) - (0^3 + 0) \\\\\n  &= 10 -(0) = 10 \\qquad \\blacksquare\n\\end{align*}\\]",
+    "crumbs": [
+      "TeXQuarto"
+    ]
+  },
+  {
+    "objectID": "texquarto.html#theorem-in-a-tex-block",
+    "href": "texquarto.html#theorem-in-a-tex-block",
+    "title": "TeXQuarto",
+    "section": "2 Theorem in a TeX Block",
+    "text": "2 Theorem in a TeX Block\nTest Tex block\n\\[\\begin{align*}\n  & \\int_0^2 (3x^2+1) dx \\\\\n  &= {x^3} + x {\\Big|}_0^2  \\\\\n  &= (2^3 +2) - (0^3 + 0) \\\\\n  &= 10 -(0) = 10 \\qquad \\blacksquare\n\\end{align*}\\]",
+    "crumbs": [
+      "TeXQuarto"
+    ]
+  },
+  {
+    "objectID": "texquarto.html#theorem-are-written-using-div-code-blocks",
+    "href": "texquarto.html#theorem-are-written-using-div-code-blocks",
+    "title": "TeXQuarto",
+    "section": "2 Theorem are written using div code-blocks",
+    "text": "2 Theorem are written using div code-blocks\n\n#thm-line is used in div-ID to cross reference Theorem 1\ntex-blocks are used to display equations within div\n.proof is a class with the div block\n\n\nTheorem 1 For any events A, B and C, defined on a sample space \\(S\\),\n\n\\(\\infty\\)\n$\n\n\nTest Tex block\n\\[\\begin{align*}\n  & \\int_0^2 (3x^2+1) dx \\\\\n  &= {x^3} + x {\\Big|}_0^2  \\\\\n  &= (2^3 +2) - (0^3 + 0) \\\\\n  &= 10 -(0) = 10 \\qquad \\blacksquare\n\\end{align*}\\]",
+    "crumbs": [
+      "TeXQuarto"
+    ]
+  },
+  {
+    "objectID": "texquarto.html#theorems-are-written-using-div-code-blocks",
+    "href": "texquarto.html#theorems-are-written-using-div-code-blocks",
+    "title": "TeXQuarto",
+    "section": "2 Theorems are written using div code-blocks",
+    "text": "2 Theorems are written using div code-blocks\n\n#thm-line is used in div-ID to cross reference Theorem 1\ntex-blocks are used to display equations within div\n.proof is a class with the div block\n\n\nTheorem 1 For any events A, B and C, defined on a sample space \\(S\\),\n\\[\\begin{array}{l l}\na. Commutativity    & A \\cup B = B \\cup A,\\\\\n                    & A \\cap B = B \\cap A;\\\\\nb. Associativity    & A \\cup (B \\cup C) = (A \\cup B)\\cup C,\\\\\n                    & A \\cap (B \\cap C) = (A \\cap B)\\cap C,\\\\\n\\end{array}\\]",
+    "crumbs": [
+      "TeXQuarto"
+    ]
+  },
+  {
+    "objectID": "texquarto.html#tables-are-entered-in-quarto-using-array-not-tabular",
+    "href": "texquarto.html#tables-are-entered-in-quarto-using-array-not-tabular",
+    "title": "TeXQuarto",
+    "section": "3 Tables are entered in quarto using array (not tabular)",
+    "text": "3 Tables are entered in quarto using array (not tabular)\nTest Tex block\n\\[\\begin{align*}\n  & \\int_0^2 (3x^2+1) dx \\\\\n  &= {x^3} + x {\\Big|}_0^2  \\\\\n  &= (2^3 +2) - (0^3 + 0) \\\\\n  &= 10 -(0) = 10 \\qquad \\blacksquare\n\\end{align*}\\]",
+    "crumbs": [
+      "TeXQuarto"
+    ]
+  },
+  {
+    "objectID": "texquarto.html#tables-are-entered-in-quarto-tex-block-using-array-not-tabular",
+    "href": "texquarto.html#tables-are-entered-in-quarto-tex-block-using-array-not-tabular",
+    "title": "TeXQuarto",
+    "section": "3 Tables are entered in quarto tex block using array (not tabular)",
+    "text": "3 Tables are entered in quarto tex block using array (not tabular)\nTest Tex block\n\\[\\begin{align*}\n  & \\int_0^2 (3x^2+1) dx \\\\\n  &= {x^3} + x {\\Big|}_0^2  \\\\\n  &= (2^3 +2) - (0^3 + 0) \\\\\n  &= 10 -(0) = 10 \\qquad \\blacksquare\n\\end{align*}\\]",
+    "crumbs": [
+      "TeXQuarto"
+    ]
+  },
+  {
+    "objectID": "texquarto.html#enter-tables-in-quarto-tex-block-using-array-not-tabular",
+    "href": "texquarto.html#enter-tables-in-quarto-tex-block-using-array-not-tabular",
+    "title": "TeXQuarto",
+    "section": "3 Enter tables in quarto tex block using array (not tabular)",
+    "text": "3 Enter tables in quarto tex block using array (not tabular)\nThis works for html output.\n\\begin{array}{l l}\n    \n    a. Commutativity    & A \\cup B = B \\cup A,\\\\\n                        & A \\cap B = B \\cap A;\\\\\n    b. Associativity    & A \\cup (B \\cup C) = (A \\cup B)\\cup C,\\\\\n                        & $A \\cap (B \\cap C) = (A \\cap B)\\cap C;\\\\\n\\end{array}\n\\[\\begin{array}{l l}\n    a. Commutativity    & A \\cup B = B \\cup A,\\\\\n                        & A \\cap B = B \\cap A;\\\\\n    b. Associativity    & A \\cup (B \\cup C) = (A \\cup B)\\cup C,\\\\\n                        & A \\cap (B \\cap C) = (A \\cap B)\\cap C;\\\\\n\\end{array}\\]",
+    "crumbs": [
+      "TeXQuarto"
+    ]
+  },
+  {
+    "objectID": "texquarto.html#equations-in-a-tex-block",
+    "href": "texquarto.html#equations-in-a-tex-block",
+    "title": "TeXQuarto",
+    "section": "4 Equations in a tex block",
+    "text": "4 Equations in a tex block\n\\[\\begin{align*}\n  & \\int_0^2 (3x^2+1) dx \\\\\n  &= {x^3} + x {\\Big|}_0^2  \\\\\n  &= (2^3 +2) - (0^3 + 0) \\\\\n  &= 10 -(0) = 10 \\qquad \\blacksquare\n\\end{align*}\\]",
+    "crumbs": [
+      "TeXQuarto"
+    ]
+  },
+  {
+    "objectID": "texquarto.html#definitions-and-theorems-are-written-using-div-code-blocks",
+    "href": "texquarto.html#definitions-and-theorems-are-written-using-div-code-blocks",
+    "title": "TeXQuarto",
+    "section": "2 Definitions and theorems are written using div code-blocks",
+    "text": "2 Definitions and theorems are written using div code-blocks\n\n#thm-line is used in div-ID to cross reference Theorem 1\ntex-blocks are used to display equations within div\n.proof is a class with the div block\n\n\nTheorem 1 For any events A, B and C, defined on a sample space \\(S\\),\n\\[\\begin{array}{l l}\na. Commutativity    & A \\cup B = B \\cup A,\\\\\n                    & A \\cap B = B \\cap A;\\\\\nb. Associativity    & A \\cup (B \\cup C) = (A \\cup B)\\cup C,\\\\\n                    & A \\cap (B \\cap C) = (A \\cap B)\\cap C,\\\\\n\\end{array}\\]",
+    "crumbs": [
+      "TeXQuarto"
+    ]
+  },
+  {
+    "objectID": "texquarto.html#definitions-theorems-are-written-using-div-code-blocks",
+    "href": "texquarto.html#definitions-theorems-are-written-using-div-code-blocks",
+    "title": "TeXQuarto",
+    "section": "2 Definitions, theorems are written using div code-blocks",
+    "text": "2 Definitions, theorems are written using div code-blocks\n\n#thm-line is used in div-ID to cross reference Theorem 1\ntex-blocks are used to display equations within div\n.proof is a class with the div block\n\n\nTheorem 1 For any events A, B and C, defined on a sample space \\(S\\),\n\\[\\begin{array}{l l}\na. Commutativity    & A \\cup B = B \\cup A,\\\\\n                    & A \\cap B = B \\cap A;\\\\\nb. Associativity    & A \\cup (B \\cup C) = (A \\cup B)\\cup C,\\\\\n                    & A \\cap (B \\cap C) = (A \\cap B)\\cap C,\\\\\n\\end{array}\\]",
+    "crumbs": [
+      "TeXQuarto"
+    ]
+  },
+  {
+    "objectID": "texquarto.html#definitionstheorems-are-written-using-div-code-blocks",
+    "href": "texquarto.html#definitionstheorems-are-written-using-div-code-blocks",
+    "title": "TeXQuarto",
+    "section": "2 Definitions,theorems are written using div code-blocks",
+    "text": "2 Definitions,theorems are written using div code-blocks\n\n#def-, #thm-line are used in div-ID to cross reference Definitions or Theorems\ntex-blocks are used to display equations within div\n.proof is a class with the div block\n\n\nDefinition 1 An \\(event\\) is any collection of possible outcomes of an experiment, that is, any subset of S (including S itself).\n\n::: {#def-}\nAn $event$ is any collection of possible outcomes of an experiment, \nthat is, any subset of S (including S itself).\n:::\n\nTheorem 1 If P is a probability function and A is any set in \\(\\mathscr{B}\\) then,\n\n\\(P(0) = 0,\\) where \\(0\\) is an empty set;\n\\(P(A) \\le 1\\);\n\\(P(A^c) = 1 - P(A)\\).\n\n\n::: {#thm-line}\nIf P is a probability function and A is any set in $\\mathscr{B}$ then,\n\na. $P(0) = 0,$ where $0$ is an empty set;\nb. $P(A) \\le 1$;\nc. $P(A^c) = 1 - P(A)$.\n:::",
+    "crumbs": [
+      "TeXQuarto"
     ]
   }
 ]
