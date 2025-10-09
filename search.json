@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "statsCentral",
     "section": "",
-    "text": "These are study notes for Statistics.\n\nStatsCentral\nStatisticalInference - Casella and Berger.\n\n\n2 + 3\n\n[1] 5\n\n\n/Users/ykwong/ykStats/ykstats.github.io/_quarto.yml"
+    "text": "These are study notes for Statistics.\n\nStatsCentral\nCasella: Statistical Inference.\n\n\n2 + 3\n\n[1] 5"
   },
   {
     "objectID": "index.html#stats-central",
@@ -56,11 +56,11 @@
   {
     "objectID": "texquarto.html#tex-snippets-used-in-a-tex-block",
     "href": "texquarto.html#tex-snippets-used-in-a-tex-block",
-    "title": "TeXQuarto",
+    "title": "TeX in Quarto",
     "section": "1 TeX Snippets used in a TeX block",
-    "text": "1 TeX Snippets used in a TeX block\n**(use cmd-shift-p and expand at cursor)\n\nali*\n\n# btw this is a code block: default class\n\\begin{align*}\n  |\n\\end{align*}\n\narray\n\n\\begin{array}{c c c}\n\\hline\n  |    \n\\hline\n\\end{array}",
+    "text": "1 TeX Snippets used in a TeX block\n**(use cmd-shift-p and expand at cursor)\n\nali* - for aligned equations with &=\n\n# btw this is a code block: default class\n\\begin{align*}\n  |\n\\end{align*}\n\narray - replaces tabular\n\n\\begin{array}{c c c}\n\\hline\n  |    \n\\hline\n\\end{array}",
     "crumbs": [
-      "TeXQuarto"
+      "TeX"
     ]
   },
   {
@@ -126,21 +126,21 @@
   {
     "objectID": "texquarto.html#enter-tables-in-quarto-tex-block-using-array-not-tabular",
     "href": "texquarto.html#enter-tables-in-quarto-tex-block-using-array-not-tabular",
-    "title": "TeXQuarto",
+    "title": "TeX in Quarto",
     "section": "3 Enter tables in quarto tex block using array (not tabular)",
-    "text": "3 Enter tables in quarto tex block using array (not tabular)\nThis works for html output.\n\\begin{array}{l l}\n    \n    a. Commutativity    & A \\cup B = B \\cup A,\\\\\n                        & A \\cap B = B \\cap A;\\\\\n    b. Associativity    & A \\cup (B \\cup C) = (A \\cup B)\\cup C,\\\\\n                        & $A \\cap (B \\cap C) = (A \\cap B)\\cap C;\\\\\n\\end{array}\n\\[\\begin{array}{l l}\n    a. Commutativity    & A \\cup B = B \\cup A,\\\\\n                        & A \\cap B = B \\cap A;\\\\\n    b. Associativity    & A \\cup (B \\cup C) = (A \\cup B)\\cup C,\\\\\n                        & A \\cap (B \\cap C) = (A \\cap B)\\cap C;\\\\\n\\end{array}\\]",
+    "text": "3 Enter tables in quarto tex block using array (not tabular)\nThis works for html output (see snippet array)\n\\begin{array}{l l}\n    \na. Commutativity    & A \\cup B = B \\cup A,\\\\\n                        & A \\cap B = B \\cap A;\\\\\nb. Associativity    & A \\cup (B \\cup C) = (A \\cup B)\\cup C,\\\\\n                        & $A \\cap (B \\cap C) = (A \\cap B)\\cap C;\\\\\n\\end{array}\n\\[\\begin{array}{l l}\na. Commutativity    & A \\cup B = B \\cup A,\\\\\n                        & A \\cap B = B \\cap A;\\\\\nb. Associativity    & A \\cup (B \\cup C) = (A \\cup B)\\cup C,\\\\\n                        & A \\cap (B \\cap C) = (A \\cap B)\\cap C;\\\\\n\\end{array}\\]",
     "crumbs": [
-      "TeXQuarto"
+      "TeX"
     ]
   },
   {
     "objectID": "texquarto.html#equations-in-a-tex-block",
     "href": "texquarto.html#equations-in-a-tex-block",
-    "title": "TeXQuarto",
-    "section": "4 Equations in a tex block",
-    "text": "4 Equations in a tex block\n\\[\\begin{align*}\n  & \\int_0^2 (3x^2+1) dx \\\\\n  &= {x^3} + x {\\Big|}_0^2  \\\\\n  &= (2^3 +2) - (0^3 + 0) \\\\\n  &= 10 -(0) = 10 \\qquad \\blacksquare\n\\end{align*}\\]",
+    "title": "TeX in Quarto",
+    "section": "4 Equations in a TeX block",
+    "text": "4 Equations in a TeX block\nUse \\begin{align*} block for equations (see snippet ali*) \\[\\begin{align*}\n  & \\int_0^2 (3x^2+1) dx \\\\\n  &= {x^3} + x {\\Big|}_0^2  \\\\\n  &= (2^3 +2) - (0^3 + 0) \\\\\n  &= 10 -(0) = 10 \\qquad \\blacksquare\n\\end{align*}\\]\n\\begin{align*}\n  & \\int_0^2 (3x^2+1) dx \\\\\n  &= {x^3} + x {\\Big|}_0^2  \\\\\n  &= (2^3 +2) - (0^3 + 0) \\\\\n  &= 10 -(0) = 10 \\qquad \\blacksquare\n\\end{align*}",
     "crumbs": [
-      "TeXQuarto"
+      "TeX"
     ]
   },
   {
@@ -171,6 +171,26 @@
     "text": "2 Definitions,theorems are written using div code-blocks\n\n#def-, #thm-line are used in div-ID to cross reference Definitions or Theorems\ntex-blocks are used to display equations within div\n.proof is a class with the div block\n\n\nDefinition 1 An \\(event\\) is any collection of possible outcomes of an experiment, that is, any subset of S (including S itself).\n\n::: {#def-}\nAn $event$ is any collection of possible outcomes of an experiment, \nthat is, any subset of S (including S itself).\n:::\n\nTheorem 1 If P is a probability function and A is any set in \\(\\mathscr{B}\\) then,\n\n\\(P(0) = 0,\\) where \\(0\\) is an empty set;\n\\(P(A) \\le 1\\);\n\\(P(A^c) = 1 - P(A)\\).\n\n\n::: {#thm-line}\nIf P is a probability function and A is any set in $\\mathscr{B}$ then,\n\na. $P(0) = 0,$ where $0$ is an empty set;\nb. $P(A) \\le 1$;\nc. $P(A^c) = 1 - P(A)$.\n:::",
     "crumbs": [
       "TeXQuarto"
+    ]
+  },
+  {
+    "objectID": "texquarto.html#definitionstheorems-are-written-with-div-code-blocks",
+    "href": "texquarto.html#definitionstheorems-are-written-with-div-code-blocks",
+    "title": "TeX in Quarto",
+    "section": "2 Definitions,theorems are written with div code-blocks",
+    "text": "2 Definitions,theorems are written with div code-blocks\n\n#def-, #thm-line are used in div-ID to cross reference Definitions or Theorems\ntex-blocks are used to display equations within div\ncan fence the def-thm with div-block with css-style border: 1pt black solid; padding: 6pt\n.proof is a class with the div block\n\n\n\nDefinition 1 An \\(event\\) is any collection of possible outcomes of an experiment, that is, any subset of S (including S itself).\n\n\n:::: {.div style=\"border: 1pt black solid\"}\n::: {#def-}\nAn $event$ is any collection of possible outcomes of an experiment, \nthat is, any subset of S (including S itself).\n:::\n::::\n\nTheorem 1 If P is a probability function and A is any set in \\(\\mathscr{B}\\) then,\n\n\\(P(0) = 0,\\) where \\(0\\) is an empty set;\n\\(P(A) \\le 1\\);\n\\(P(A^c) = 1 - P(A)\\).\n\n\n::: {#thm-line}\nIf P is a probability function and A is any set in $\\mathscr{B}$ then,\n\na.  $P(0) = 0,$ where $0$ is an empty set;\nb.  $P(A) \\le 1$;\nc.  $P(A^c) = 1 - P(A)$.\n:::",
+    "crumbs": [
+      "TeX"
+    ]
+  },
+  {
+    "objectID": "sympy.html",
+    "href": "sympy.html",
+    "title": "SymPy",
+    "section": "",
+    "text": "import math\nmath.sqrt(12)\n\n3.4641016151377544",
+    "crumbs": [
+      "SymPy"
     ]
   }
 ]

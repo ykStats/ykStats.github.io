@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>TeXQuarto – statsCentral</title>
+<title>TeX in Quarto – statsCentral</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,6 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./sympy.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -146,7 +147,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./texquarto.html">TeXQuarto</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./texquarto.html">TeX</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -173,7 +174,13 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./texquarto.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">TeXQuarto</span></a>
+ <span class="menu-text">TeX</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sympy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SymPy</span></a>
   </div>
 </li>
     </ul>
@@ -187,9 +194,9 @@ window.Quarto = {
    
   <ul>
   <li><a href="#tex-snippets-used-in-a-tex-block" id="toc-tex-snippets-used-in-a-tex-block" class="nav-link active" data-scroll-target="#tex-snippets-used-in-a-tex-block"><span class="header-section-number">1</span> TeX Snippets used in a TeX block</a></li>
-  <li><a href="#definitionstheorems-are-written-using-div-code-blocks" id="toc-definitionstheorems-are-written-using-div-code-blocks" class="nav-link" data-scroll-target="#definitionstheorems-are-written-using-div-code-blocks"><span class="header-section-number">2</span> <code>Definitions,theorems</code> are written using div code-blocks</a></li>
+  <li><a href="#definitionstheorems-are-written-with-div-code-blocks" id="toc-definitionstheorems-are-written-with-div-code-blocks" class="nav-link" data-scroll-target="#definitionstheorems-are-written-with-div-code-blocks"><span class="header-section-number">2</span> <code>Definitions,theorems</code> are written with div code-blocks</a></li>
   <li><a href="#enter-tables-in-quarto-tex-block-using-array-not-tabular" id="toc-enter-tables-in-quarto-tex-block-using-array-not-tabular" class="nav-link" data-scroll-target="#enter-tables-in-quarto-tex-block-using-array-not-tabular"><span class="header-section-number">3</span> Enter tables in quarto tex block using <code>array</code> (not tabular)</a></li>
-  <li><a href="#equations-in-a-tex-block" id="toc-equations-in-a-tex-block" class="nav-link" data-scroll-target="#equations-in-a-tex-block"><span class="header-section-number">4</span> Equations in a tex block</a></li>
+  <li><a href="#equations-in-a-tex-block" id="toc-equations-in-a-tex-block" class="nav-link" data-scroll-target="#equations-in-a-tex-block"><span class="header-section-number">4</span> Equations in a TeX block</a></li>
   </ul>
 </nav>
     </div>
@@ -198,7 +205,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">TeXQuarto</h1>
+<h1 class="title">TeX in Quarto</h1>
 </div>
 
 
@@ -220,14 +227,14 @@ window.Quarto = {
 <h2 data-number="1" class="anchored" data-anchor-id="tex-snippets-used-in-a-tex-block"><span class="header-section-number">1</span> TeX Snippets used in a TeX block</h2>
 <p>**(use <code>cmd-shift-p</code> and <code>expand at cursor</code>)</p>
 <ol type="1">
-<li><code>ali*</code></li>
+<li><code>ali*</code> - for aligned equations with <code>&amp;=</code></li>
 </ol>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a># btw this is a code block: default class</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  |</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>\end{align*}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="2" type="1">
-<li><code>array</code></li>
+<li><code>array</code> - replaces <code>tabular</code></li>
 </ol>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>\begin{array}{c c c}</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>\hline</span>
@@ -235,20 +242,25 @@ window.Quarto = {
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>\hline</span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>\end{array}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="definitionstheorems-are-written-using-div-code-blocks" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="definitionstheorems-are-written-using-div-code-blocks"><span class="header-section-number">2</span> <code>Definitions,theorems</code> are written using div code-blocks</h2>
+<section id="definitionstheorems-are-written-with-div-code-blocks" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="definitionstheorems-are-written-with-div-code-blocks"><span class="header-section-number">2</span> <code>Definitions,theorems</code> are written with div code-blocks</h2>
 <ul>
 <li><code>#def-, #thm-line</code> are used in div-ID to cross reference Definitions or Theorems</li>
 <li>tex-blocks are used to display equations within div</li>
+<li>can fence the def-thm with div-block with css-style <code>border: 1pt black solid; padding: 6pt</code></li>
 <li>.proof is a class with the div block</li>
 </ul>
-<div id="def-" class="theorem definition">
+<div class="div" style="border: 1pt black solid">
+<div id="def-" class="theorem definition" style="padding: 6pt">
 <p><span class="theorem-title"><strong>Definition 1</strong></span> An <span class="math inline">\(event\)</span> is any collection of possible outcomes of an experiment, that is, any subset of S (including S itself).</p>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>::: {#def-}</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>An $event$ is any collection of possible outcomes of an experiment, </span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>that is, any subset of S (including S itself).</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>:::: {.div style="border: 1pt black solid"}</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>::: {#def-}</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>An $event$ is any collection of possible outcomes of an experiment, </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>that is, any subset of S (including S itself).</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>::::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div id="thm-line" class="theorem">
 <p><span class="theorem-title"><strong>Theorem 1</strong></span> If P is a probability function and A is any set in <span class="math inline">\(\mathscr{B}\)</span> then,</p>
 <ol type="a">
@@ -260,36 +272,42 @@ window.Quarto = {
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>::: {#thm-line}</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>If P is a probability function and A is any set in $\mathscr{B}$ then,</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>a. $P(0) = 0,$ where $0$ is an empty set;</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>b. $P(A) \le 1$;</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>c. $P(A^c) = 1 - P(A)$.</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>a.  $P(0) = 0,$ where $0$ is an empty set;</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>b.  $P(A) \le 1$;</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>c.  $P(A^c) = 1 - P(A)$.</span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="enter-tables-in-quarto-tex-block-using-array-not-tabular" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="enter-tables-in-quarto-tex-block-using-array-not-tabular"><span class="header-section-number">3</span> Enter tables in quarto tex block using <code>array</code> (not tabular)</h2>
-<p>This works for html output.</p>
+<p>This works for html output (see snippet <code>array</code>)</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>\begin{array}{l l}</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    a. Commutativity    &amp; A \cup B = B \cup A,\\</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>a. Commutativity    &amp; A \cup B = B \cup A,\\</span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>                        &amp; A \cap B = B \cap A;\\</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    b. Associativity    &amp; A \cup (B \cup C) = (A \cup B)\cup C,\\</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>b. Associativity    &amp; A \cup (B \cup C) = (A \cup B)\cup C,\\</span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>                        &amp; $A \cap (B \cap C) = (A \cap B)\cap C;\\</span>
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>\end{array}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <span class="math display">\[\begin{array}{l l}
-    a. Commutativity    &amp; A \cup B = B \cup A,\\
+a. Commutativity    &amp; A \cup B = B \cup A,\\
                         &amp; A \cap B = B \cap A;\\
-    b. Associativity    &amp; A \cup (B \cup C) = (A \cup B)\cup C,\\
+b. Associativity    &amp; A \cup (B \cup C) = (A \cup B)\cup C,\\
                         &amp; A \cap (B \cap C) = (A \cap B)\cap C;\\
 \end{array}\]</span>
 </section>
 <section id="equations-in-a-tex-block" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="equations-in-a-tex-block"><span class="header-section-number">4</span> Equations in a tex block</h2>
-<p><span class="math display">\[\begin{align*}
+<h2 data-number="4" class="anchored" data-anchor-id="equations-in-a-tex-block"><span class="header-section-number">4</span> Equations in a TeX block</h2>
+<p>Use <code>\begin{align*}</code> block for equations (see snippet <code>ali*</code>) <span class="math display">\[\begin{align*}
   &amp; \int_0^2 (3x^2+1) dx \\
   &amp;= {x^3} + x {\Big|}_0^2  \\
   &amp;= (2^3 +2) - (0^3 + 0) \\
   &amp;= 10 -(0) = 10 \qquad \blacksquare
 \end{align*}\]</span></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  &amp; \int_0^2 (3x^2+1) dx \\</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  &amp;= {x^3} + x {\Big|}_0^2  \\</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  &amp;= (2^3 +2) - (0^3 + 0) \\</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  &amp;= 10 -(0) = 10 \qquad \blacksquare</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>\end{align*}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>
@@ -695,6 +713,15 @@ window.Quarto = {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./sympy.html" class="pagination-link" aria-label="SymPy">
+        <span class="nav-page-text">SymPy</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
