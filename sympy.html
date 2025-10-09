@@ -223,47 +223,47 @@ window.Quarto = {
 
 <hr>
 <p>Sympy is a Python library for symbolic mathematics.</p>
-<div id="6ff12797" class="cell" data-execution_count="1">
+<div id="4174a612" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>math.sqrt(<span class="dv">12</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display" data-execution_count="110">
+<div class="cell-output cell-output-display" data-execution_count="124">
 <pre><code>3.4641016151377544</code></pre>
 </div>
 </div>
-<div id="3e3cae6c" class="cell" data-execution_count="2">
+<div id="73e9cba3" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sympy</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>sympy.sqrt(<span class="dv">12</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="111">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="125">
 <p><span class="math inline">\(\displaystyle 2 \sqrt{3}\)</span></p>
 </div>
 </div>
 <section id="expand-and-factor" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="expand-and-factor"><span class="header-section-number">1</span> Expand and Factor</h2>
-<div id="249093dc" class="cell" data-execution_count="3">
+<div id="55b49080" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sympy <span class="im">import</span> <span class="op">*</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>x, y <span class="op">=</span> symbols(<span class="st">'x y'</span>)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>expr1 <span class="op">=</span> (x<span class="op">+</span><span class="dv">1</span>)<span class="op">*</span>(x<span class="op">+</span><span class="dv">2</span>)</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>expand(expr1)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="112">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="126">
 <p><span class="math inline">\(\displaystyle x^{2} + 3 x + 2\)</span></p>
 </div>
 </div>
-<div id="03feaf41" class="cell" data-execution_count="4">
+<div id="26fd0f62" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sympy <span class="im">import</span> symbols</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> symbols(<span class="st">'x'</span>)</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>expr2 <span class="op">=</span> x<span class="op">**</span><span class="dv">3</span> <span class="op">+</span> <span class="dv">3</span><span class="op">*</span>x<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> <span class="dv">3</span><span class="op">*</span>x <span class="op">+</span> <span class="dv">1</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>factor(expr2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="113">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="127">
 <p><span class="math inline">\(\displaystyle \left(x + 1\right)^{3}\)</span></p>
 </div>
 </div>
 </section>
 <section id="differentiation" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="differentiation"><span class="header-section-number">2</span> Differentiation</h2>
-<div id="0f3587c5" class="cell" data-execution_count="5">
+<div id="2c51d7e4" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> symbols(<span class="st">'x'</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>diff(sin(x)<span class="op">*</span>exp(x), x)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="114">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="128">
 <p><span class="math inline">\(\displaystyle e^{x} \sin{\left(x \right)} + e^{x} \cos{\left(x \right)}\)</span></p>
 </div>
 </div>
@@ -271,19 +271,19 @@ window.Quarto = {
 <section id="indefinite-and-definite-integration" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="indefinite-and-definite-integration"><span class="header-section-number">3</span> Indefinite and Definite Integration</h2>
 <p>Compute <span class="math inline">\(\int{2 e^{x} sin(x)} dx\)</span></p>
-<div id="028e3193" class="cell" data-execution_count="6">
+<div id="ade1f937" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>integrate(<span class="dv">2</span><span class="op">*</span>exp(x)<span class="op">*</span>sin(x))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="115">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="129">
 <p><span class="math inline">\(\displaystyle e^{x} \sin{\left(x \right)} - e^{x} \cos{\left(x \right)}\)</span></p>
 </div>
 </div>
 <hr>
 <p>Compute <span class="math inline">\(\int_{-\infty}^\infty sin(x^2) dx\)</span></p>
-<div id="6962809b" class="cell" data-execution_count="7">
+<div id="1f8db3a7" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sympy <span class="im">import</span> <span class="op">*</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>θ <span class="op">=</span> symbols(<span class="st">'θ'</span>)</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>integrate(sin(θ<span class="op">**</span><span class="dv">2</span>),(θ, <span class="op">-</span>oo, oo))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="116">
+<div class="cell-output cell-output-display cell-output-markdown" data-execution_count="130">
 <p><span class="math inline">\(\displaystyle \frac{\sqrt{2} \sqrt{\pi}}{2}\)</span></p>
 </div>
 </div>
