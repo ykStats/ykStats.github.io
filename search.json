@@ -188,7 +188,67 @@
     "href": "sympy.html",
     "title": "SymPy",
     "section": "",
-    "text": "import math\nmath.sqrt(12)\n\n3.4641016151377544",
+    "text": "Sympy is a Python library for symbolic mathematics.\nimport math\nmath.sqrt(12)\n\n3.4641016151377544\nimport sympy\nsympy.sqrt(12)\n\n\\(\\displaystyle 2 \\sqrt{3}\\)",
+    "crumbs": [
+      "SymPy"
+    ]
+  },
+  {
+    "objectID": "sympy.html#differentiation-and-integration",
+    "href": "sympy.html#differentiation-and-integration",
+    "title": "SymPy",
+    "section": "1 differentiation and integration",
+    "text": "1 differentiation and integration",
+    "crumbs": [
+      "SymPy"
+    ]
+  },
+  {
+    "objectID": "sympy.html#expand-and-factor",
+    "href": "sympy.html#expand-and-factor",
+    "title": "SymPy",
+    "section": "1 Expand and Factor",
+    "text": "1 Expand and Factor\n\nfrom sympy import *\nx, y = symbols('x y')\nexpr1 = (x+1)*(x+2)\nexpand(expr1)\n\n\\(\\displaystyle x^{2} + 3 x + 2\\)\n\n\n\nfrom sympy import symbols\nx = symbols('x')\nexpr2 = x**3 + 3*x**2 + 3*x + 1\nfactor(expr2)\n\n\\(\\displaystyle \\left(x + 1\\right)^{3}\\)",
+    "crumbs": [
+      "SymPy"
+    ]
+  },
+  {
+    "objectID": "sympy.html#differentiate-and-integrate",
+    "href": "sympy.html#differentiate-and-integrate",
+    "title": "SymPy",
+    "section": "2 Differentiate and Integrate",
+    "text": "2 Differentiate and Integrate\n\nx = symbols('x')\ndiff(sin(x)*exp(x), x)\n\n\\(\\displaystyle e^{x} \\sin{\\left(x \\right)} + e^{x} \\cos{\\left(x \\right)}\\)\n\n\nCompute \\(\\int{e^{x} sin(x)} dx\\)\n\nintegrate(exp(x)*sin(x))\n\n\\(\\displaystyle \\frac{e^{x} \\sin{\\left(x \\right)}}{2} - \\frac{e^{x} \\cos{\\left(x \\right)}}{2}\\)",
+    "crumbs": [
+      "SymPy"
+    ]
+  },
+  {
+    "objectID": "sympy.html#differentiation",
+    "href": "sympy.html#differentiation",
+    "title": "SymPy",
+    "section": "2 Differentiation",
+    "text": "2 Differentiation\n\nx = symbols('x')\ndiff(sin(x)*exp(x), x)\n\n\\(\\displaystyle e^{x} \\sin{\\left(x \\right)} + e^{x} \\cos{\\left(x \\right)}\\)",
+    "crumbs": [
+      "SymPy"
+    ]
+  },
+  {
+    "objectID": "sympy.html#integration",
+    "href": "sympy.html#integration",
+    "title": "SymPy",
+    "section": "3 Integration",
+    "text": "3 Integration\nCompute \\(\\int{e^{x} sin(x)} dx\\)\n\nintegrate(exp(x)*sin(x))\n\n\\(\\displaystyle \\frac{e^{x} \\sin{\\left(x \\right)}}{2} - \\frac{e^{x} \\cos{\\left(x \\right)}}{2}\\)",
+    "crumbs": [
+      "SymPy"
+    ]
+  },
+  {
+    "objectID": "sympy.html#indefinite-and-definite-integration",
+    "href": "sympy.html#indefinite-and-definite-integration",
+    "title": "SymPy",
+    "section": "3 Indefinite and Definite Integration",
+    "text": "3 Indefinite and Definite Integration\nCompute \\(\\int{2 e^{x} sin(x)} dx\\)\n\nintegrate(2*exp(x)*sin(x))\n\n\\(\\displaystyle e^{x} \\sin{\\left(x \\right)} - e^{x} \\cos{\\left(x \\right)}\\)\n\n\n\nCompute \\(\\int_{-\\infty}^\\infty sin(x^2) dx\\)\n\nfrom sympy import *\nθ = symbols('θ')\nintegrate(sin(θ**2),(θ, -oo, oo))\n\n\\(\\displaystyle \\frac{\\sqrt{2} \\sqrt{\\pi}}{2}\\)",
     "crumbs": [
       "SymPy"
     ]
