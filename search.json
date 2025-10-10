@@ -11,7 +11,11 @@
     "href": "index.html",
     "title": "statsCentral",
     "section": "",
-    "text": "These are study notes for Statistics.\n\nStatsCentral\nCasella: Statistical Inference.\n\n\n2 + 3\n\n[1] 5"
+    "text": "These are study notes for Statistics.\n\nStatsCentral\nCasella: Statistical Inference.",
+    "crumbs": [
+      "StatsCentral",
+      "Stats"
+    ]
   },
   {
     "objectID": "index.html#stats-central",
@@ -60,6 +64,7 @@
     "section": "1 TeX Snippets used in a TeX block",
     "text": "1 TeX Snippets used in a TeX block\n**(use cmd-shift-p and expand at cursor)\n\nali* - for aligned equations with &=\n\n# btw this is a code block: default class\n\\begin{align*}\n  |\n\\end{align*}\n\narray - replaces tabular\n\n\\begin{array}{c c c}\n\\hline\n  |    \n\\hline\n\\end{array}",
     "crumbs": [
+      "Notes",
       "TeX"
     ]
   },
@@ -130,6 +135,7 @@
     "section": "3 Enter tables in quarto tex block using array (not tabular)",
     "text": "3 Enter tables in quarto tex block using array (not tabular)\nThis works for html output (see snippet array)\n\\begin{array}{l l}\n    \na. Commutativity    & A \\cup B = B \\cup A,\\\\\n                        & A \\cap B = B \\cap A;\\\\\nb. Associativity    & A \\cup (B \\cup C) = (A \\cup B)\\cup C,\\\\\n                        & $A \\cap (B \\cap C) = (A \\cap B)\\cap C;\\\\\n\\end{array}\n\\[\\begin{array}{l l}\na. Commutativity    & A \\cup B = B \\cup A,\\\\\n                        & A \\cap B = B \\cap A;\\\\\nb. Associativity    & A \\cup (B \\cup C) = (A \\cup B)\\cup C,\\\\\n                        & A \\cap (B \\cap C) = (A \\cap B)\\cap C;\\\\\n\\end{array}\\]",
     "crumbs": [
+      "Notes",
       "TeX"
     ]
   },
@@ -140,6 +146,7 @@
     "section": "4 Equations in a TeX block",
     "text": "4 Equations in a TeX block\nUse \\begin{align*} block for equations (see snippet ali*) \\[\\begin{align*}\n  & \\int_0^2 (3x^2+1) dx \\\\\n  &= {x^3} + x {\\Big|}_0^2  \\\\\n  &= (2^3 +2) - (0^3 + 0) \\\\\n  &= 10 -(0) = 10 \\qquad \\blacksquare\n\\end{align*}\\]\n\\begin{align*}\n  & \\int_0^2 (3x^2+1) dx \\\\\n  &= {x^3} + x {\\Big|}_0^2  \\\\\n  &= (2^3 +2) - (0^3 + 0) \\\\\n  &= 10 -(0) = 10 \\qquad \\blacksquare\n\\end{align*}",
     "crumbs": [
+      "Notes",
       "TeX"
     ]
   },
@@ -180,6 +187,7 @@
     "section": "2 Definitions,theorems are written with div code-blocks",
     "text": "2 Definitions,theorems are written with div code-blocks\n\n#def-, #thm-line are used in div-ID to cross reference Definitions or Theorems\ntex-blocks are used to display equations within div\ncan fence the def-thm with div-block with css-style border: 1pt black solid; padding: 6pt\n.proof is a class with the div block\n\n\n\nDefinition 1 An \\(event\\) is any collection of possible outcomes of an experiment, that is, any subset of S (including S itself).\n\n\n:::: {.div style=\"border: 1pt black solid\"}\n::: {#def-}\nAn $event$ is any collection of possible outcomes of an experiment, \nthat is, any subset of S (including S itself).\n:::\n::::\n\nTheorem 1 If P is a probability function and A is any set in \\(\\mathscr{B}\\) then,\n\n\\(P(0) = 0,\\) where \\(0\\) is an empty set;\n\\(P(A) \\le 1\\);\n\\(P(A^c) = 1 - P(A)\\).\n\n\n::: {#thm-line}\nIf P is a probability function and A is any set in $\\mathscr{B}$ then,\n\na.  $P(0) = 0,$ where $0$ is an empty set;\nb.  $P(A) \\le 1$;\nc.  $P(A^c) = 1 - P(A)$.\n:::",
     "crumbs": [
+      "Notes",
       "TeX"
     ]
   },
@@ -188,8 +196,9 @@
     "href": "sympy.html",
     "title": "SymPy",
     "section": "",
-    "text": "Sympy is a Python library for symbolic mathematics.\nimport math\nmath.sqrt(12)\n\n3.4641016151377544\nimport sympy\nsympy.sqrt(12)\n\n\\(\\displaystyle 2 \\sqrt{3}\\)",
+    "text": "Sympy is a Python library for symbolic mathematics.\nimport math\nmath.sqrt(12)\n\n\\(\\displaystyle 3.46410161513775\\)\nimport sympy\nsympy.sqrt(12)\n\n\\(\\displaystyle 2 \\sqrt{3}\\)",
     "crumbs": [
+      "Notes",
       "SymPy"
     ]
   },
@@ -208,8 +217,9 @@
     "href": "sympy.html#expand-and-factor",
     "title": "SymPy",
     "section": "1 Expand and Factor",
-    "text": "1 Expand and Factor\n\nfrom sympy import *\nx, y = symbols('x y')\nexpr1 = (x+1)*(x+2)\nexpand(expr1)\n\n\\(\\displaystyle x^{2} + 3 x + 2\\)\n\n\n\nfrom sympy import symbols\nx = symbols('x')\nexpr2 = x**3 + 3*x**2 + 3*x + 1\nfactor(expr2)\n\n\\(\\displaystyle \\left(x + 1\\right)^{3}\\)",
+    "text": "1 Expand and Factor\n\nfrom sympy import *\ninit_printing()\n\nx, y = symbols('x y')\nexpr1 = (x+1)*(x+2)\npprint(expr1)\nexpand(expr1)\n\n(x + 1)⋅(x + 2)\n\n\n\\(\\displaystyle x^{2} + 3 x + 2\\)\n\n\n\nexpr2 = x**3 + 3*x**2 + 3*x + 1\n\nexpr2\nfactor(expr2)\n\n\\(\\displaystyle \\left(x + 1\\right)^{3}\\)\n\n\n\nexpr3 = x+1\nexpr4 = x**3 + 3*x**2 + 3*x + 1\nexpr3\n\n\\(\\displaystyle x + 1\\)\n\n\n\nexpr4\n\n\\(\\displaystyle x^{3} + 3 x^{2} + 3 x + 1\\)",
     "crumbs": [
+      "Notes",
       "SymPy"
     ]
   },
@@ -230,6 +240,7 @@
     "section": "2 Differentiation",
     "text": "2 Differentiation\n\nx = symbols('x')\ndiff(sin(x)*exp(x), x)\n\n\\(\\displaystyle e^{x} \\sin{\\left(x \\right)} + e^{x} \\cos{\\left(x \\right)}\\)",
     "crumbs": [
+      "Notes",
       "SymPy"
     ]
   },
@@ -250,6 +261,7 @@
     "section": "3 Indefinite and Definite Integration",
     "text": "3 Indefinite and Definite Integration\nCompute \\(\\int{2 e^{x} sin(x)} dx\\)\n\nintegrate(2*exp(x)*sin(x))\n\n\\(\\displaystyle e^{x} \\sin{\\left(x \\right)} - e^{x} \\cos{\\left(x \\right)}\\)\n\n\n\nCompute \\(\\int_{-\\infty}^\\infty sin(x^2) dx\\)\n\nfrom sympy import *\nθ = symbols('θ')\nintegrate(sin(θ**2),(θ, -oo, oo))\n\n\\(\\displaystyle \\frac{\\sqrt{2} \\sqrt{\\pi}}{2}\\)",
     "crumbs": [
+      "Notes",
       "SymPy"
     ]
   }
