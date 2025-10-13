@@ -9,9 +9,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "statsCentral",
+    "title": "Stats Web",
     "section": "",
-    "text": "These are study notes for Statistics.\n\nStatsCentral\nCasella: Statistical Inference.",
+    "text": "StatsCentral\nCasella\n\nStatsCentral Notes\n\nTeX\nSympy.",
     "crumbs": [
       "StatsCentral",
       "Stats"
@@ -263,6 +263,28 @@
     "crumbs": [
       "Notes",
       "SymPy"
+    ]
+  },
+  {
+    "objectID": "index.html#statscentral-notes",
+    "href": "index.html#statscentral-notes",
+    "title": "ykstats.github.io",
+    "section": "StatsCentral Notes",
+    "text": "StatsCentral Notes\n\nTeX\nSympy\nSets",
+    "crumbs": [
+      "StatsCentral",
+      "StatsWeb"
+    ]
+  },
+  {
+    "objectID": "sets.html",
+    "href": "sets.html",
+    "title": "Sets",
+    "section": "",
+    "text": "Sets Notation\n\n\n\nUnion\n\\(A \\cup B\\)\n$A \\cup B$\n\n\n\nIntersection\n\\(A \\cap B\\)\n$A \\cap B$\n\n\nExclusion\n\\(A \\backslash B\\)\n$A \\backlash B$",
+    "crumbs": [
+      "Notes",
+      "Sets"
     ]
   }
 ]
