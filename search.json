@@ -281,7 +281,7 @@
     "href": "sets.html",
     "title": "Sets",
     "section": "",
-    "text": "Sets Notation\n\n\n\nUnion\n\\(A \\cup B\\)\n$A \\cup B$\n\n\n\nIntersection\n\\(A \\cap B\\)\n$A \\cap B$\n\n\n\nExclusion\n\\(A \\backslash B\\)\n$A \\backlash B$",
+    "text": "Sets Notation\n\n\n\nUnion \\(A \\cup B\\)\n$A \\cup B$\n\n\n\nIntersection \\(A \\cap B\\)\n$A \\cap B$\n\n\n\nExclusion \\(A \\backslash B\\) or \\(A \\cap B^c\\)\n$A \\backlash B$ or $A \\cap B^c$",
     "crumbs": [
       "Notes",
       "Sets"
